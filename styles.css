@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+:root {
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  max-width: 550px;
+  min-height: 350px;
+  background-color: var(--darkGrayishBlue);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+header {
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#adviceText {
+  color: var(--lightCyan);
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+.divider svg {
+  transform: scale(95%);
+  padding: 10px;
+}
+
+#button {
+  all: unset;
+  background-color: var(--neonGreen);
+  color: var(--darkBlue);
+  padding: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 92%;
+}
+
+#button svg {
+  transform: translateY(3px);
+}
+
+#button:hover {
+  cursor: pointer;
+  box-shadow: -1px -1px 30px hsl(150, 71%, 70%), 1px 1px 30px hsl(150, 71%, 70%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--lightCyan);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: var(--lightCyan);
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 350px;
+    padding: 25px;
+  }
+
+  header {
+    margin-top: 10px;
+  }
+
+  #adviceText {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .divider svg {
+    transform: scale(70%);
+    margin-top: 15px;
+  }
+}
